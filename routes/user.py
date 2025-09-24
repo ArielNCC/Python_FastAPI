@@ -1,5 +1,5 @@
 from fastapi import APIRouter, Response, status
-from config.db import conn
+from secure_config.db import conn
 from models.user import users
 from schemas.user import UserBase, UserOut
 from cryptography.fernet import Fernet
